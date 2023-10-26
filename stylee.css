@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+html
+{
+	border: 0px;
+	margin:0px;
+}
+
+.header-bg 
+{
+	background: linear-gradient(to bottom, #003366 0%, #0033cc 100%);
+}
+
+.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12 
+{
+	padding:20px 30px;
+}
+
+.logo-text-design
+{
+	font-weight:bold;
+	font-size: 20px;
+	color:white;
+	
+}
+
+.hyperlink-design 
+{
+	text-decoration: none;
+	color:yellow;
+}
+
+.hyperlink-design:hover 
+{
+	color:aqua;
+	text-decoration: underline;
+}
+
+#mynavbar ul 
+{
+	list-style: none;
+}
+
+#mynavbar ul li 
+{
+	float:left;
+	padding:20px;
+}
+
+#mynavbar ul li a
+{
+	text-decoration:none;
+	color:yellow;
+}
+
+#mynavbar ul li a:hover 
+{
+	font-weight: bold;
+	color:brown;
+}
+
+.menubar-bg 
+{
+	 background: linear-gradient(to bottom, #00ffff 0%, #ccccff 100%);
+}
+
+.gray 
+{
+	background-color:gray;
+}
+
+.black 
+{
+	background-color:black;
+}
+
+.background-pic 
+{
+	padding:0px;
+	 margin:0px;
+	 border:2px solid skyblue;
+}
+
+.textfield-design
+{
+	width:300px;
+	height:50px;
+	border-radius: 10px;
+}
+
+.textfield-design:focus
+{
+	background-color: beige;
+	
+}
+
+.findJobBorder 
+{
+	border: 2px solid black;
+	border-radius:10px;
+	text-align:center;
+	background-color: rgb(230, 230, 255);
+}
+
+.jobDescrip 
+{
+	background-color: rgb(204, 229, 255);
+	margin-bottom: 50px;
+	margin-top:50px;
+}
+
+.register_div 
+{
+	text-align:center;
+	background-color: 	rgb(191, 255, 128);
+	margin-top: 30px;
+	margin-bottom: 30px;
+	 box-shadow: 5px 10px 8px #888888;
+}
+
+.register_textfield 
+{
+	padding:10px;
+	width:250px;
+	border-radius: 15px;
+	
+}
+
+.register_textfield:focus 
+{
+	box-shadow: 0px 0px 20px red;
+}
+
+.profile_about_style 
+{
+	border:2px solid goldenrod;
+	border-radius:5px;
+	box-shadow: 0px 0px 3px;
+}
+
+.textarea-style 
+{
+	width:300px;
+	height: 150px;
+	border-radius: 10px;
+}
+
+.profile_about_header_style 
+{
+	color:brown;
+}
+
+.education_style 
+{
+	background-color: 	rgb(230, 230, 255);
+	
+}
+

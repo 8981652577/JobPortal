@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>JobPortal</display-name>
+  <welcome-file-list>  
+    <welcome-file>Index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <filter>
+  		<filter-name>filtervalid</filter-name>
+  		<filter-class>com.ayan.backend.jobportal.ValidationFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  		<filter-name>filtervalid</filter-name>
+  		<url-pattern>/reg</url-pattern>
+  </filter-mapping>
+  <servlet>
+  		<servlet-name>registerDemo</servlet-name>
+  		<servlet-class>com.ayan.backend.jobportal.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>registerDemo</servlet-name>
+  		<url-pattern>/reg</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  		<servlet-name>LoginDemo</servlet-name>
+  		<servlet-class>com.ayan.backend.jobportal.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>LoginDemo</servlet-name>
+  		<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>logoutdemo</servlet-name>
+  		<servlet-class>com.ayan.backend.jobportal.Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>logoutdemo</servlet-name>
+		<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>editDetails</servlet-name>
+  		<servlet-class> com.ayan.backend.jobportal.EditAboutDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>editDetails</servlet-name>
+  		<url-pattern>/editAbout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>addEdu</servlet-name>
+  		<servlet-class>com.ayan.backend.jobportal.AddEducation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>addEdu</servlet-name>
+  		<url-pattern>/addEducation</url-pattern>
+  </servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>editEdu</servlet-name>
+  		<servlet-class>com.ayan.backend.jobportal.EditEducation</servlet-class>
+  	</servlet>
+  <servlet-mapping>
+  		<servlet-name>editEdu</servlet-name>
+  		<url-pattern>/editEducation</url-pattern>
+  </servlet-mapping>
+  
+  	<servlet>
+  		<servlet-name>addexperience</servlet-name>
+  		<servlet-class>com.ayan.backend.jobportal.AddExperience</servlet-class>
+  	</servlet>
+  <servlet-mapping>
+  		<servlet-name>addexperience</servlet-name>
+  		<url-pattern>/addExp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>editExp</servlet-name>
+  		<servlet-class>com.ayan.backend.jobportal.EditExperience</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>editExp</servlet-name>
+  		<url-pattern>/editExperience</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>delEdu</servlet-name>
+  		<servlet-class>com.ayan.backend.jobportal.DeleteEducation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>delEdu</servlet-name>
+  		<url-pattern>/deleteEducation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>DelExp</servlet-name>
+  		<servlet-class>com.ayan.backend.jobportal.DeleteExperience</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>DelExp</servlet-name>
+  		<url-pattern>/DeleteExperience</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+   			<servlet-name>upload</servlet-name>
+   			<servlet-class>com.ayan.backend.jobportal.UpdateProfilePic</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   		<servlet-name>upload</servlet-name>
+   		<url-pattern>/uploadPic</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   		<servlet-name>uploadResume</servlet-name>
+   		<servlet-class>com.ayan.backend.jobportal.UploadResume</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   			<servlet-name>uploadResume</servlet-name>
+   			<url-pattern>/uploadResume</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   		<servlet-name>downresum</servlet-name>
+   		<servlet-class>com.ayan.backend.jobportal.DownloadResume</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   			<servlet-name>downresum</servlet-name>
+   			<url-pattern>/DownloadResum</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   		<servlet-name>ResumeBuild</servlet-name>
+   		<servlet-class>com.ayan.backend.jobportal.ResumeBuilder</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   			<servlet-name>ResumeBuild</servlet-name>
+   			<url-pattern>/resumebuilder</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   		<servlet-name>resumebuilder</servlet-name>
+   		<servlet-class>com.ayan.backend.jobportal.DownloadResumeBuilder</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   			<servlet-name>resumebuilder</servlet-name>
+   			<url-pattern>/DwnldResumeBuilder</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   		<servlet-name>addVacancies</servlet-name>
+   		<servlet-class>com.ayan.backend.jobportal.AddCompanyDetails</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   		<servlet-name>addVacancies</servlet-name>
+   		<url-pattern>/addCompany</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   		<servlet-name>companyLogout</servlet-name>
+   		<servlet-class>com.ayan.backend.jobportal.ComLogout</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   			<servlet-name>companyLogout</servlet-name>
+   			<url-pattern>/comlogout</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   		<servlet-name>apliedjob</servlet-name>
+   		<servlet-class>com.ayan.backend.jobportal.AppliedJob</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   			<servlet-name>apliedjob</servlet-name>
+   			<url-pattern>/jobApplied</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   		<servlet-name>deleteApljob</servlet-name>
+   		<servlet-class>com.ayan.backend.jobportal.DeleteApplication</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   		<servlet-name>deleteApljob</servlet-name>
+   		<url-pattern>/DeleteApplied</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   		<servlet-name>jobsSearch</servlet-name>
+   		<servlet-class>com.ayan.backend.jobportal.JobsSearchByTechnology</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   		<servlet-name>jobsSearch</servlet-name>
+   		<url-pattern>/JobsSearchByTechnology</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   		<servlet-name>searchjobslocation</servlet-name>
+   		<servlet-class>com.ayan.backend.jobportal.JobsSearchByLocation</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   			<servlet-name>searchjobslocation</servlet-name>
+   			<url-pattern>/JobsSearchByLocation</url-pattern>
+   </servlet-mapping>
+   
+  <servlet>
+   		<servlet-name>GetUserDataDemo</servlet-name>
+   		<servlet-class>com.ayan.backend.jobportal.GetUserData</servlet-class>
+   </servlet>
+   <servlet-mapping>
+  			<servlet-name>GetUserDataDemo</servlet-name>
+   			<url-pattern>/Data</url-pattern>
+   </servlet-mapping>
+   	
+   	  <servlet>
+   		<servlet-name>checkcookiedemo</servlet-name>
+   		<servlet-class>com.ayan.backend.jobportal.CheckCookie</servlet-class>
+   	</servlet>
+   <servlet-mapping>
+   			<servlet-name>checkcookiedemo</servlet-name>
+   			<url-pattern>/CheckCookie</url-pattern>
+   </servlet-mapping>
+   
+   
+</web-app>
+
